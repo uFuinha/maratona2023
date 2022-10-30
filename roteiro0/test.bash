@@ -1,5 +1,5 @@
 clear
 
-g++ --std=c++17 $1
+g++ --std=c++14 $1
 
 time ./a.out < test.txt
