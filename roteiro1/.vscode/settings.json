@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "files.associations": {
         "cmath": "cpp",
@@ -48,4 +49,11 @@
         "unordered_set": "cpp",
         "forward_list": "cpp"
     }
+=======
+{
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+>>>>>>> 5f044c7ecf1b3c89a3457576ffa3197d713e4436
 }
