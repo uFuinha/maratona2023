@@ -1,10 +1,4 @@
 #include <bits/stdc++.h>
-#include <iostream>
-#include <iomanip>
-#include <string>
-#include <vector>
-#include <set>
-#include <sstream>
 using namespace std;
 
 #define tudo(a) a.begin(), a.end()
@@ -44,7 +38,6 @@ int main()
             string time1, time2;
             int gol1, gol2;
             cin >> time1 >> gol1 >> bin >> gol2 >> time2;
-            //cout << time1 << " " << gol1 << " - " << gol2 << " " << time2 << endl;
 
             for(int t = 0; t < nTimes; t++){
                 if(nome(times[t]) == time1){
