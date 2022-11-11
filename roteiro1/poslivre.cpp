@@ -12,27 +12,25 @@ int main(){
         if(W == 0 || H == 0) break;
         
         char tabuleiro[W][H];
-        for(int i = 0; i < H; i++)
-            for(int j = 0; j < W; j++)
+        for(int i = 0; i < W; i++)
+            for(int j = 0; j < H; j++)
                 tabuleiro[i][j] = '-';
 
+        int x1, x2, y1, y2;
         for(int i = 0; i < N; i++){
-            int x1, x2, y1, y2;
-            cin >> x1; cin >> y1;
-            cin >> x2; cin >> y2;
-
-            for(int X = min(x1, x2); X <= max(x1, x2); X++)
-                for(int Y = min(y1, y2); Y <= max(y1, y2); Y++)
+            cin >> x1 >> y1 >> x2 >> y2;
+            for(int Y = min(y1, y2); Y <= max(y1, y2); Y++)
+                for(int X = min(x1, x2); X <= max(x1, x2); X++)
                     tabuleiro[Y-1][X-1] = '*';
         }
 
         int contador = 0;
-        for(int i = 0; i < H; i++)
-            for(int j = 0; j < W; j++)
-                if(tabuleiro[i][j] == '*') contador++;
+        for(int i = 0; i < W; i++)
+            for(int j = 0; j < H; j++)
+                if(tabuleiro[i][j] == '-') contador++;
         
-        if(H*W - contador == 0) cout << "There is no empty spots." << endl;
-        else cout << "There is " << H*W - contador << " empty spots." << endl;
+        if(contador == 0) cout << "There is no empty spots." << endl;
+        else cout << "There is " << contador << " empty spots." << endl;
     }
     return 0;
 }
