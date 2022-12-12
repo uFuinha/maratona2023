@@ -31,7 +31,6 @@ int main(){
                     aliens[i].push_back(tmp);
                 }
             }
-            
         }
 
         vector<alien> especies;
